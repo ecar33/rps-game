@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="header-container">
+        <div class="header">
+            <p>Rock</p>
+            <p>-</p>
+            <p>Paper</p>
+            <p>-</p>
+            <p>Scissors</p>
+            <div class="score">
+                <p>Score: </p>
+                <div class="running-count">
+                    <p id="player-score-value">0</p>
+                    <p>-</p>
+                    <p id="computer-score-value">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-container active">
+        <p class="play-text">Press to play!</p>
+        <div class="icons-container">
+            <div class="image-circular-border">
+                <img class="icon" data-choice="rock" src="./imgs/rock.svg" alt="">
+            </div>
+            <div class="image-circular-border">
+                <img class="icon" data-choice="paper" src="./imgs/paper.svg" alt="">
+            </div>
+            <div class="image-circular-border">
+                <img class="icon" data-choice="scissors" src="./imgs/scissors.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="round-container inactive">
+        <div class="round-icons-container">
+            <img class="icon player_choice_icon" src="" alt="">
+            <img class="icon outcome_icon">
+            <img class="icon computer_choice_icon" src="" alt="">
+        </div>
+        <button class="menu-button">Go back</button>
+    </div>
+
+    <div class="winner-container inactive">
+        <div class="winner-icons-container">
+            <img class="icon winner-icon">
+            <p class="winner-text"></p>
+        </div>
+        <button class="new-game-button">Go back</button>
+    </div>
+
+
+
+    <div class="footer-container">
+        <p>github.com/ecar3</p>
+    </div>
+
 </body>
+
 </html>
